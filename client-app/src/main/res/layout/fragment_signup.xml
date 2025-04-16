@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_h_margin"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="40sp"
+        android:layout_marginBottom="@dimen/bg_ripple_round_48"
+        android:textColor="@color/black"
+        android:text="@string/sign_up"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/EditTextStyle"
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:hint="@string/hint_username"
+        android:inputType="text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/EditTextStyle"
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="@dimen/layout_fields_middle_margin"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/ButtonSignUpStyle"
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/layout_fields_middle_margin"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/signup_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_tv_separator_margin_top"
+        android:text="@string/sign_up_error"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_tv_separator_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_line_separator_height"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="@dimen/login_tv_separator_h_padding"
+            android:text="@string/or"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_line_separator_height"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_tv_sign_up_margin_top"
+        android:background="@drawable/bg_ripple_round_34"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/login_tv_sign_up_padding"
+        android:text="@string/login"
+        android:textColor="@color/green_700"
+        android:textSize="@dimen/text_size_20" />
+
+</LinearLayout>

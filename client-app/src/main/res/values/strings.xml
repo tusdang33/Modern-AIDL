@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Modern AIDL</string>
+
+    <!--Login-->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="or">Or</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login_success">Login was successful!</string>
+    <string name="err_all_fields_are_empty">Please fill all the fields</string>
+    <string name="err_incorrect_username_or_password">Incorrect username or password</string>
+    <string name="err_login_user_not_exists">User does not exists. Please sign up to create a new
+        user!</string>
+
+    <!--Sign up-->
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="err_incorrect_confirm_password">Your password and confirm
+        password are mismatching!</string>
+    <string name="err_user_already_exists">User already exists. Please choose a
+        different username or try login</string>
+    <string name="sign_up_success">Sign up was successfully completed!</string>
+
+    <!--Home-->
+    <string name="home">i-Bank</string>
+    <string name="current_balance">Current Bal.</string>
+    <string name="hint_enter_amount">Enter an amount</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="err_amount_empty">Please enter an amount!</string>
+    <string name="welcome_note">Welcome %s! Have a nice banking experience with AIDL</string>
+    <string name="err_user_not_found">Failure!, User does not found!.</string>
+    <string name="err_withdrawal_balance_is_zero">Withdrawal Failed!, Current Balance is
+        zero.</string>
+    <string name="err_withdrawal_amount_exceeds">Withdrawal Failed!, Withdrawal Amount
+        exceeds Current Balance limit.</string>
+
+    <!--Home Menu-->
+    <string name="logout">Logout</string>
+    <string name="login_error">Login error</string>
+    <string name="sign_up_error">Sign up error</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_bank_service">com.kaizm.serverbank.intent.action.BIND_BANK_SERVICE</string>
+    <string name="component_bank_service">com.kaizm.serverbank/.service.BankService</string>
+</resources>
